@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+body {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.top-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    font-family: Roboto;
+}
+
+.left-side, .right-side {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.kitty {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.second-kitty {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 100%;
+}
+
+.lupa {
+    width: 1rem;
+    height: 1rem;
+}
+
+.mic, 
+.cam {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.middle-section {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+    gap: 1.2rem;
+}
+
+.search-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+}
+
+.search-form-input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgb(124, 141, 206);
+    gap: 1rem;
+    border-radius: 30px;
+    padding: 0.5rem 1.5rem;
+}
+
+.search-form label {
+    display: none;
+}
+
+.search-form input {
+    width: 27rem;
+    padding: 0.5rem;
+    border: none;
+    outline: none;
+
+}
+
+.search-form-button button {
+    background-color: rgba(124, 140, 206, 0.465);
+    border: 1px solid rgb(124, 141, 206);
+    border-radius: 4px;
+    color: rgb(100, 117, 183);
+    font-family: Roboto;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+}
+
+.bottom-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Roboto;
+    background-color: rgba(124, 140, 206, 0.465);
+    padding: 1rem;
+    margin-top: 15rem;
+    font-size: 14px;
+}
+
+.bottom-section a {
+    margin: 0 1rem;
+    color: rgb(100, 117, 183);
+}
