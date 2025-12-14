@@ -1,5 +1,6 @@
 const button = document.querySelector('#love-button');
-const body = document.querySelector('body')
+const body = document.querySelector('body');
+const input = document.querySelector('#search');
 
 let isLoved = false;
 
@@ -10,9 +11,13 @@ button.addEventListener('click', () => {
         button.style.backgroundColor = "rgba(124, 140, 206, 0.465)";  
         isLoved = false;   
     }else{
-        
-        button.innerText= "Kamilek + Klaudia = <3";
-        button.style.backgroundColor = "white";
+        const name = input.value;
+        if(name == ""){
+            button.innerText= "Kamilek + Klaudia = <3";  
+        }else{
+            button.innerText = name + " <3";
+        }
+        button.style.backgroundColor = "white"
         isLoved = true;
     }
 });
